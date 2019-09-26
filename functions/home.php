@@ -25,7 +25,7 @@ $statement = $db->prepare($query);
 $statement->execute();
 $total_logins = $statement->fetch();
 
-$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY YEAR(login_date), MONTH(login_date)";
+$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY  MONTH(login_date)";
 $statement = $db->prepare($query);
 $statement->execute();
 $monthly_login = $statement->fetchAll();
@@ -44,7 +44,7 @@ $pieChartMonth->set('legend', $format_month);
 $pieChartMonth->set('displayLegend', true);
 
 
-$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY YEAR(login_date), MONTH(login_date), WEEK(login_date)";
+$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY  WEEK(login_date)";
 $statement = $db->prepare($query);
 $statement->execute();
 $weekly_login = $statement->fetchAll();
@@ -64,7 +64,7 @@ $pieChartWeek->set('legend', $format_week);
 $pieChartWeek->set('displayLegend', true);
 
 
-$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY YEAR(login_date), MONTH(login_date), WEEK(login_date), DAY(login_date)";
+$query = "SELECT count(id) as count, login_date FROM 360vuz.login_history GROUP BY DAY(login_date)";
 $statement = $db->prepare($query);
 $statement->execute();
 $daily_login = $statement->fetchAll();
