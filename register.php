@@ -21,8 +21,8 @@ include_once 'partials/header.php';
 <div class="container container-auth right-panel-active" id="container">
     <div class="form-container sign-up-container">
         <form method="POST" action="">
-            <h3>Create Account</h3>
             <br>
+            <h3>Create Account</h3>
             <br>
             <input type="text" name="name" placeholder="Name" />
             <input type="text" name="username" placeholder="Username" />

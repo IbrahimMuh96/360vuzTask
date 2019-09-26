@@ -20,8 +20,8 @@ include_once 'partials/header.php';
 <div class="container container-auth" id="container">
     <div class="form-container sign-in-container">
         <form method="POST" action="">
-            <h3>Sign in</h3>
             <br>
+            <h3>Sign in</h3>
             <br>
             <input type="text" name="username" placeholder="User Name" />
             <input type="password" name="password" placeholder="Password" />
