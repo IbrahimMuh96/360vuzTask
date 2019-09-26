@@ -26,24 +26,24 @@
             <ul class="navbar-nav">
                 <?php if( isset($_SESSION['username']) ) :?>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/360VUZ/edit_user.php?id=<?php echo $_SESSION['id']?>"><span class="sr-only"></span></a>
+                        <a class="nav-link" href="edit_user.php?id=<?php echo $_SESSION['id']?>"><span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/360VUZ/logout.php">Logout</a>
+                        <a class="nav-link" href="logout.php">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/360VUZ/users.php">Users</a>
+                        <a class="nav-link" href="users.php">Users</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/360VUZ/index.php">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                 <?php else: ?>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/360VUZ/login.php">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/360VUZ/register.php">Register</a>
+                    <a class="nav-link" href="register.php">Register</a>
                 </li>
                 <?php endif ?>
             </ul>
